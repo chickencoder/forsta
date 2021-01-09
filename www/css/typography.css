@@ -1,0 +1,50 @@
+:root {
+  --font-size: 20px;
+  font-size: var(--font-size);
+}
+
+*::selection {
+  background-color: var(--accent-color);
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+  line-height: 1.5;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 1.75rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+a,
+a:visited {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: blue;
+}
+
+a::before {
+  content: '\2192\00A0';
+}
+
+a:focus,
+a:active {
+  box-shadow: 0 0 0 3px var(--accent-color);
+}
+
+@media (max-width: 36em) {
+  :root {
+    --font-size: 18px;
+  }
+}

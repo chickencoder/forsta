@@ -1,0 +1,59 @@
+:root {
+  --screen-padding: 2rem;
+  --screen-color: #ffffff;
+  --text-color: #111111;
+  --text-light: #666666;
+  --accent-color: #ffff00;
+  --form-gray: #cccccc;
+}
+
+body {
+  font-family: -apple-system, "Helvetica Neue", sans-serif;
+  background: var(--screen-color);
+  color: var(--text-color);
+  max-width: 36em;
+  padding: var(--screen-padding);
+}
+
+main,
+header,
+footer {
+  margin-bottom: 1.5rem;
+}
+
+nav {
+  margin-bottom: 1rem;
+}
+
+.breadcrumbs {
+  list-style-type: none;
+  display: flex;
+}
+
+.breadcrumbs li {
+  color: var(--text-light);
+}
+
+.breadcrumbs li a {
+  display: inline;
+  text-decoration: none;
+}
+
+.breadcrumbs li a::before {
+  display: none;
+}
+
+.breadcrumbs li::after {
+  content: "\2192";
+  margin: 0 0.5rem;
+}
+
+.breadcrumbs li:last-child::after {
+  display: none;
+}
+
+@media (max-width: 36em) {
+  :root {
+    --screen-padding: 1rem;
+  }
+}
