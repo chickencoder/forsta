@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "Forsta Website",
   "scripts": {
-    "dev": "@11ty/eleventy",
+    "build": "eleventy",
+    "dev": "eleventy --serve",
     "css": "postcss --use autoprefixer -o forsta.css css/*.css"
   },
   "author": "Jesse Sibley <jessesibley@hey.com>",
